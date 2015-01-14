@@ -5,9 +5,9 @@
 </head>
     <body>
         <div ng-controller="StoreController as store">
-            <h1></h1>
-                <h2></h2>
-                <p></p>
+            <h1>{{store.product.name}}</h1>
+            <h2>${{store.product.price}}</h2>
+            <p>{{store.product.description}}</p>
         </div>
         <script type="text/javascript" src="../static/angular.min.js"></script>
         <script type="text/javascript" src="../static/app.js"></script>
