@@ -14,7 +14,8 @@ app.controller('StoreController', function(){
 var gem = {
     name: 'Dodecahedron',
     price: 2.95,
-    description: '. . .',
+    description: '12 facets of beauty. Can it be yours?',
+    canPurchase: false,
 }
 
 })();
