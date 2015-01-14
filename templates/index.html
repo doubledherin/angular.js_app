@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html ng-app="store">
 <head>
-    <link rel="stylesheet" type="text/css" href="../static/vendors/dist/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <!-- <link href="/static/css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" type="text/css" href="/static/vendors/dist/css/bootstrap.min.css">
 </head>
+    <!--Products container-->
     <body>
         <!--Gives this div access to 'store' controller-->
         <div ng-controller="StoreController as store">
@@ -12,8 +15,9 @@
             <!--'ng-show' is a directive: show Add to Cart only if canPurchase == true-->
             <button ng-show="store.product.canPurchase"> Add to Cart </button>
         </div>
-        <script type="text/javascript" src="../static/vendors/angular.min.js"></script>
-        <script type="text/javascript" src="../static/app.js"></script>
+
+    <script type="text/javascript" src="../static/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="../static/app.js"></script>
 
     </body>
 </html>
