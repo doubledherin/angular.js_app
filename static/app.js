@@ -1,1 +1,2 @@
+/* The below line is used by the ng-app="store" attribute on the html element of index.html to create an app on document load. 'angular' is the Angular library; 'module' is a method that creates a module; the method's first argument (a string) is the module's name; the second (a list; now empty) will store the module's dependencies.*/
 var app = angular.module('store', [ ]);
