@@ -16,21 +16,33 @@ var gems = [{
     price: 12.95,
     description: '12 facets of beauty. Can it be yours?',
     canPurchase: true,
-    soldOut: false
+    soldOut: false,
+    images: [
+    {
+      'full': '../static/images/Dodecahedron_Rendering.jpg'
+    }]
   },
   { 
     name: 'Pretty Pentagonal',
     price: 5.95,
     description: '5 facets of beauty. Can it be yours?',
     canPurchase: true,
-    soldOut: false
+    soldOut: false,
+    images: [
+    {
+      'full': '../static/images/pentagon.gif'
+    }]
   },
   { 
-    name: 'Sexy Sextagon',
+    name: 'Sexy Hexagon',
     price: 6.95,
     description: "6 facets of beauty. Can it be yours? No, because it's not for sale.",
     canPurchase: false,
-    soldOut: false
+    soldOut: false,
+    images: [
+    {
+      'full': '../static/images/hexagon.jpg'
+    }]
   }
 ]
 
