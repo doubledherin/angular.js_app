@@ -8,8 +8,13 @@ var app = angular.module('store', [ ]);
 /* By convention, first argument (name of controller, a string) should be a camelcase and should include the word 'controller' and reference it's module. 
 Second argument is an anonymous function that gets executed when StoreController is called.*/
 app.controller('StoreController', function(){
-
+  this.product = gem
 });
 
+var gem = {
+    name: 'Dodecahedron',
+    price: 2.95,
+    description: '. . .',
+}
 
 })();
