@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="../static/vendors/dist/css/bootstrap.min.css">
 </head>
     <body>
+        <!--Gives this div access to 'store' controller-->
         <div ng-controller="StoreController as store">
             <h1>{{store.product.name}}</h1>
             <h2>${{store.product.price}}</h2>
