@@ -16,6 +16,7 @@ var gem = {
     price: 2.95,
     description: '12 facets of beauty. Can it be yours?',
     canPurchase: true,
+    soldOut: true
 }
 
 })();
