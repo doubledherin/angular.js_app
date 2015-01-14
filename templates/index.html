@@ -3,21 +3,22 @@
 <head>
     <meta charset="utf-8">
     <!-- <link href="/static/css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/> -->
-    <link rel="stylesheet" type="text/css" href="/static/vendors/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendors/dist/css/bootstrap.min.css">
 </head>
     <!--Products container-->
 
     <!--Gives this div access to 'store' controller-->
     <body ng-controller="StoreController as store">
 
-        <!--Hides this dive unless product is not sold out.-->
-        <div ng-hide="store.product.soldOut">
-            <h1> {{store.product.name}} </h1>
-            <h2>${{store.product.price}}</h2>
-            <p>{{store.product.description}}</p>
+      <div ng-repeat="product in store.products">
+        <div ng-hide="product.soldOut">
+            <h1> {{product.name}} </h1>
+            <h2>${{product.price}}</h2>
+            <p>{{product.description}}</p>
             <!--'ng-show' is a directive: show Add to Cart only if canPurchase == true-->
-            <button ng-show="store.product.canPurchase"> Add to Cart </button>
+            <button ng-show="product.canPurchase"> Add to Cart </button>
         </div>
+      </div>
 
     <script type="text/javascript" src="../static/vendors/angular.min.js"></script>
     <script type="text/javascript" src="../static/app.js"></script>
