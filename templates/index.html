@@ -11,18 +11,31 @@
     <body ng-controller="StoreController as store">
       <ul class="list-group">
         <li class="list-group-item" ng-repeat="product in store.products">
-            <h3>
+          <h3>
               {{product.name}}
               <em class="pull-right">{{product.price | currency}}</em>
               <img ng-src="{{product.images[0].full}}"/>
-            </h3>
-            <section>
+          </h3>
+          <section>
               <ul class="nav nav-pills">
                 <li> <a href ng-click="tab = 1">Description</a> </li>
                 <li> <a href ng-click="tab = 2">Specifications</a> </li>
                 <li> <a href ng-click="tab = 3">Reviews</a> </li>
               </ul>
-            </section>
+        
+            <div class="panel" ng-show="tab === 1">
+              <h4>Description</h4>
+              <blockquote>{{product.description}}</blockquote>
+            </div>
+            <div class="panel" ng-show="tab === 2">
+              <h4>Specifications</h4>
+              <blockquote>None yet.</blockquote>
+            </div>
+            <div class="panel" ng-show="tab === 3">
+              <h4>Reviews</h4>
+              <blockquote>None yet.</blockquote>
+            </div>
+          </section>
         </li>
       </ul>
 
