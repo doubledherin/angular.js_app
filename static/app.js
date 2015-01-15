@@ -11,6 +11,16 @@ app.controller('StoreController', function(){
   this.products = gems;
 });
 
+app.controller('PanelController', function(){
+  this.tab = 1;
+  this.selectTab = function(setTab) {
+    this.tab = setTab;
+  };
+  this.isSelected = function(checkTab){
+    return this.tab === checkTab;
+  };
+});
+
 var gems = [{
     name: 'Dope Dodecahedron',
     price: 12.95,
