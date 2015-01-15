@@ -16,16 +16,17 @@
               <em class="pull-right">{{product.price | currency}}</em>
               <img ng-src="{{product.images[0].full}}"/>
             </h3>
+            <section>
+              <ul class="nav nav-pills">
+                <li> <a href ng-click="tab = 1">Description</a> </li>
+                <li> <a href ng-click="tab = 2">Specifications</a> </li>
+                <li> <a href ng-click="tab = 3">Reviews</a> </li>
+              </ul>
+            </section>
         </li>
       </ul>
 
-      <section>
-        <ul class="nav nav-pills">
-          <li> <a href ng-click="tab = 1">Description</a> </li>
-          <li> <a href ng-click="tab = 2">Specifications</a> </li>
-          <li> <a href ng-click="tab = 3">Reviews</a> </li>
-        </ul>
-      </section>
+
 
     <script type="text/javascript" src="../static/vendors/angular.min.js"></script>
     <script type="text/javascript" src="../static/app.js"></script>
